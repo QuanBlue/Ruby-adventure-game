@@ -7,7 +7,7 @@
 
 ## Technology:
 
--  **Unity Version**: `2020.1.6f1`
+-  **Unity Version**: `2021.3.14f1`
 
 ## Project:
 
