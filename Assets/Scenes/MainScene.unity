@@ -15559,14 +15559,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6116616677857269468, guid: 15bf264cb188a8642b57a82b03e6137a, type: 3}
-      propertyPath: m_SortingLayer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6116616677857269468, guid: 15bf264cb188a8642b57a82b03e6137a, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -1332323199
-      objectReference: {fileID: 0}
     - target: {fileID: 6116616677857269469, guid: 15bf264cb188a8642b57a82b03e6137a, type: 3}
       propertyPath: m_Name
       value: Projectile
@@ -15624,30 +15616,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2513062699771638635, guid: d66690c79e6879c429f50d5c55ebedd1, type: 3}
-      propertyPath: m_SpriteTilingProperty.pivot.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2513062699771638635, guid: d66690c79e6879c429f50d5c55ebedd1, type: 3}
-      propertyPath: m_SpriteTilingProperty.border.w
-      value: 0.14
-      objectReference: {fileID: 0}
-    - target: {fileID: 2513062699771638635, guid: d66690c79e6879c429f50d5c55ebedd1, type: 3}
-      propertyPath: m_SpriteTilingProperty.border.x
-      value: 0.26999998
-      objectReference: {fileID: 0}
-    - target: {fileID: 2513062699771638635, guid: d66690c79e6879c429f50d5c55ebedd1, type: 3}
-      propertyPath: m_SpriteTilingProperty.border.z
-      value: 0.37
-      objectReference: {fileID: 0}
-    - target: {fileID: 2513062699771638635, guid: d66690c79e6879c429f50d5c55ebedd1, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 1.28
-      objectReference: {fileID: 0}
-    - target: {fileID: 2513062699771638635, guid: d66690c79e6879c429f50d5c55ebedd1, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 1.28
-      objectReference: {fileID: 0}
     - target: {fileID: 5200054434343772296, guid: d66690c79e6879c429f50d5c55ebedd1, type: 3}
       propertyPath: m_Name
       value: Ruby
@@ -15655,18 +15623,6 @@ PrefabInstance:
     - target: {fileID: 5200054434343772298, guid: d66690c79e6879c429f50d5c55ebedd1, type: 3}
       propertyPath: m_RootOrder
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5200054434343772298, guid: d66690c79e6879c429f50d5c55ebedd1, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 3.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5200054434343772298, guid: d66690c79e6879c429f50d5c55ebedd1, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 3.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5200054434343772298, guid: d66690c79e6879c429f50d5c55ebedd1, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 3.2
       objectReference: {fileID: 0}
     - target: {fileID: 5200054434343772298, guid: d66690c79e6879c429f50d5c55ebedd1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15707,10 +15663,6 @@ PrefabInstance:
     - target: {fileID: 5200054434343772298, guid: d66690c79e6879c429f50d5c55ebedd1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5200054434343772298, guid: d66690c79e6879c429f50d5c55ebedd1, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5200054434343772299, guid: d66690c79e6879c429f50d5c55ebedd1, type: 3}
       propertyPath: projectilePrefab
@@ -15830,14 +15782,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Damageable
       objectReference: {fileID: 0}
-    - target: {fileID: 5416439856664303843, guid: a9f2f790c5da508448a834a1ba20cea0, type: 3}
-      propertyPath: m_SortingLayer
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5416439856664303843, guid: a9f2f790c5da508448a834a1ba20cea0, type: 3}
-      propertyPath: m_SortingLayerID
-      value: 1015474551
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9f2f790c5da508448a834a1ba20cea0, type: 3}
 --- !u!1001 &5688674802076976722
@@ -15847,14 +15791,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7140805985859129704, guid: 2f07d69930bfe724ba99ac87ad7ff071, type: 3}
-      propertyPath: m_SortingLayer
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7140805985859129704, guid: 2f07d69930bfe724ba99ac87ad7ff071, type: 3}
-      propertyPath: m_SortingLayerID
-      value: 1015474551
-      objectReference: {fileID: 0}
     - target: {fileID: 7140805985859129705, guid: 2f07d69930bfe724ba99ac87ad7ff071, type: 3}
       propertyPath: m_Name
       value: Collectible Health
@@ -15959,14 +15895,6 @@ PrefabInstance:
     - target: {fileID: 226445968111324902, guid: 1850c45ac5813c246abd27e1b0c4728b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7633042445373349127, guid: 1850c45ac5813c246abd27e1b0c4728b, type: 3}
-      propertyPath: m_Size.y
-      value: 0.94353044
-      objectReference: {fileID: 0}
-    - target: {fileID: 7633042445373349127, guid: 1850c45ac5813c246abd27e1b0c4728b, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.023543522
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1850c45ac5813c246abd27e1b0c4728b, type: 3}

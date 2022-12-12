@@ -30,8 +30,8 @@ Transform:
   m_GameObject: {fileID: 5200054434343772296}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -9.14, y: 0.54, z: 0}
-  m_LocalScale: {x: 6.4496, y: 6.4496, z: 6.4496}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 3.2, y: 3.2, z: 3.2}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -149,8 +149,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeInvincible: 2
   maxHealth: 5
-  currentHealth: 0
+  currentHealth: 5
   speed: 4
+  projectilePrefab: {fileID: 0}
 --- !u!95 &9088119909133757886
 Animator:
   serializedVersion: 4
