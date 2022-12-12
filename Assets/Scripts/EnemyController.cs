@@ -11,6 +11,7 @@ public class EnemyController : MonoBehaviour
     public float changeTime = 3.0f;
     float timer;
     int direction = 1;
+    bool broken = true;
     
     // Start is called before the first frame update
     void Start()
@@ -22,6 +23,11 @@ public class EnemyController : MonoBehaviour
 
     void Update()
     {
+        if (!broken)
+        {
+            return;
+        }
+
         timer -= Time.deltaTime;
         if (timer < 0)
         {
@@ -43,6 +49,11 @@ public class EnemyController : MonoBehaviour
     void FixedUpdate()
     {
         Vector2 position = rigidbody2D_.position;
+        if (!broken)
+        {
+            return;
+        }
+
         if (vertical)
         {
             position.y = position.y + Time.deltaTime * speed * direction; ;
@@ -53,6 +64,13 @@ public class EnemyController : MonoBehaviour
         }
         
         rigidbody2D_.MovePosition(position);
+    }
+
+    public void Fix()
+    {
+        broken = false;
+        rigidbody2D_.simulated = false;
+        animator.SetTrigger("Fixed");
     }
 
     void OnCollisionEnter2D(Collision2D other)
