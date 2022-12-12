@@ -12,8 +12,8 @@ TagManager:
   - Water
   - UI
   - 
-  - 
-  - 
+  - Character
+  - Projectile
   - 
   - 
   - 
@@ -46,4 +46,7 @@ TagManager:
     locked: 0
   - name: Character
     uniqueID: 1015474551
+    locked: 0
+  - name: Projectile
+    uniqueID: 2962644097
     locked: 0
