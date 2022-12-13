@@ -37,7 +37,8 @@ public class RubyController : MonoBehaviour
         }
 
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
-        Debug.Log(currentHealth + "/" + maxHealth);
+
+        UIHealthBar.instance.SetValue(currentHealth / (float)maxHealth);
     }
 
     // Start is called before the first frame update
@@ -92,7 +93,7 @@ public class RubyController : MonoBehaviour
 
         Projectile projectile = projectileObject.GetComponent<Projectile>();
         projectile.Launch(lookDirection, 300);
-        
+
         animator.SetTrigger("Launch");
     }
 }
