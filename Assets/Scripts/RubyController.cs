@@ -13,6 +13,11 @@ public class RubyController : MonoBehaviour
     public int currentHealth;
 
     public float speed = 2.5f;
+    
+    AudioSource audioSource;
+    public AudioClip clip;
+    public AudioClip moveClip;
+    public AudioClip triggerClip;
 
     Rigidbody2D rigidbody2d;
     Animator animator;
@@ -28,6 +33,7 @@ public class RubyController : MonoBehaviour
         if (amount < 0)
         {
             animator.SetTrigger("Hit");
+            PlaySound(triggerClip);
 
             if (isInvincible)
                 return;
@@ -47,6 +53,12 @@ public class RubyController : MonoBehaviour
         rigidbody2d = GetComponent<Rigidbody2D>();
         currentHealth = maxHealth;
         animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
+    }
+
+    public void PlaySound(AudioClip clip)
+    {
+        audioSource.PlayOneShot(clip);
     }
 
     // Update is called once per frame
@@ -63,6 +75,11 @@ public class RubyController : MonoBehaviour
         }
 
         Vector2 move = new Vector2(horizontal, vertical);
+        if (move.x != 0.0f || move.y != 0.0f)
+        {
+            PlaySound(moveClip);
+        }
+
         if (!Mathf.Approximately(move.x, 0.0f) || !Mathf.Approximately(move.y, 0.0f))
         {
             lookDirection.Set(move.x, move.y);
@@ -76,6 +93,22 @@ public class RubyController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Launch();
+        }
+
+        if (Input.GetKeyDown(KeyCode.X))
+        {
+            RaycastHit2D hit = Physics2D.Raycast(rigidbody2d.position + Vector2.up * 0.2f, lookDirection, 1.5f, LayerMask.GetMask("NPC"));
+            if (hit.collider != null)
+            {
+                if (hit.collider != null)
+                {
+                    NonPlayerCharacter character = hit.collider.GetComponent<NonPlayerCharacter>();
+                    if (character != null)
+                    {
+                        character.DisplayDialog();
+                    }
+                }
+            }
         }
     }
 
@@ -95,5 +128,7 @@ public class RubyController : MonoBehaviour
         projectile.Launch(lookDirection, 300);
 
         animator.SetTrigger("Launch");
+
+        PlaySound(clip);
     }
 }
